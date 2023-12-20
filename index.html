@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hudud24</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./tailwind.config.js" />
+  </head>
 
-<body>
-
-
-
+  <body>
+    <section>
+      <div class="container flex items-center justify-between ">
+        <div class="flex items-center gap-4">
+          <span class="w-8 h-8 bg-red-700"></span>
+          <h2 class="text-4xl font-bold">Ommabop yangiliklar</h2>
+        </div>
+        <img src="img/Connector.svg" alt="" />
+        <a class="flex gap-2" href="#"
+          >Barchasi <span><img src="img/arrow-right.svg" alt="" /></span
+        ></a>
+      </div>
+      <div class="w-full mt-8 px-5 max-md:max-w-full">
+          <div class="flex flex-col w-[24%]">
+            <div class="flex flex-col ">
+              <div class="items-stretch flex flex-col p-2">
+                <div class="border border-[color:var(--Grey-Grey-2,#E1E3E6)] w-40 flex px-2 py-1 rounded-3xl border-solid gap-2">
+                  <img src="img/calendar.svg"/>
+                  <div class="text-gray-500 text-xs font-medium leading-4">
+                    8-oktabr, 23:23
+                  </div>
+                </div>
+                <div class="overflow-hidden text-neutral-900 text-ellipsis text-base font-bold leading-5 mt-2">
+                  Shavkat Mirziyoyev Qozon shahriga yetib bordi
+                </div>
+                <div class="overflow-hidden text-slate-700 text-ellipsis text-sm font-medium leading-5 mt-2">
+                  O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev Rossiya
+                  Federatsiyasiga rasmiy tashrifning birinchi manzili – Qozon
+                  shahriga bordi.
+                </div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'brandRed': '#DD3333',
-                        'darkBlue': '#283648',
-                        'mainblack': '#171717',
-                        'mainwhite': '#FFFFFF',
-                        'secondaryblack': '#272828',
-                        'gray0': '#697583',
-                        'gray1': '#A4B0BE',
-                        'gray2': '#E1E3E6',
-                        'gray3': '#F4F4F4',
-                        'bgcolor': '#FAFAFA',
-                    },
-                }
-            }
-        }
-    </script>
-</body>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              center: true,
+              padding: "1rem",
+              maxWidth: "1184px",
+            },
+            colors: {
+              brandRed: "#DD3333",
+              darkBlue: "#283648",
+              mainblack: "#171717",
+              mainwhite: "#FFFFFF",
+              secondaryblack: "#272828",
+              gray0: "#697583",
+              gray1: "#A4B0BE",
+              gray2: "#E1E3E6",
+              gray3: "#F4F4F4",
+              bgcolor: "#FAFAFA",
+            },
 
+            borderRadius: {
+              20: "20px",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
 </html>
